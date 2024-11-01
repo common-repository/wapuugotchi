@@ -1,0 +1,34 @@
+body {
+
+	.wapuugotchi_mission__overlay {
+		background-color: rgba(0, 0, 0, 0.5);
+
+		&.hidden {
+			display: none;
+			opacity: 0;
+		}
+
+		&.unlocked {
+			pointer-events: none;
+		}
+
+		.wapuugotchi_mission__action {
+			display: flex;
+			justify-content: center;
+			padding: 0 100px;
+
+			@media (max-width: 782px) {
+				padding: 0 10px;
+			}
+
+			svg {
+				max-width: 500px;
+				height: 100vh;
+			}
+		}
+	}
+
+	#wapuugotchi__avatar {
+		display: none;
+	}
+}
